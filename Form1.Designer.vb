@@ -50,7 +50,6 @@ Partial Class Form1
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
         C_idLabel = New System.Windows.Forms.Label()
         C_first_nameLabel = New System.Windows.Forms.Label()
         C_last_nameLabel = New System.Windows.Forms.Label()
@@ -256,7 +255,7 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(443, 10)
+        Me.Button5.Location = New System.Drawing.Point(443, 12)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(117, 35)
         Me.Button5.TabIndex = 16
@@ -281,20 +280,11 @@ Partial Class Form1
         Me.Button7.Text = "Delete"
         Me.Button7.UseVisualStyleBackColor = True
         '
-        'Button8
-        '
-        Me.Button8.Location = New System.Drawing.Point(307, 336)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 23)
-        Me.Button8.TabIndex = 27
-        Me.Button8.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(595, 371)
-        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
@@ -344,6 +334,5 @@ Partial Class Form1
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
 
 End Class

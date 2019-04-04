@@ -1,51 +1,45 @@
-﻿Public Class vendors
+﻿Public Class suppliers
 
-    Private Sub VendorsBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles VendorsBindingNavigatorSaveItem.Click
+    Private Sub SuppliersBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
         Me.Validate()
-        Me.VendorsBindingSource.EndEdit()
+        Me.SuppliersBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.PetshopdbDataSet)
 
     End Sub
 
-    Private Sub vendors_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'PetshopdbDataSet.Vendors' table. You can move, or remove it, as needed.
-        Me.VendorsTableAdapter.Fill(Me.PetshopdbDataSet.Vendors)
+    Private Sub suppliers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'PetshopdbDataSet.suppliers' table. You can move, or remove it, as needed.
+        Me.SuppliersTableAdapter.Fill(Me.PetshopdbDataSet.suppliers)
 
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Me.VendorsBindingSource.MoveFirst()
-    End Sub
-
-    Private Sub Button8_Click(sender As Object, e As EventArgs)
-        items.Show()
-
+        Me.SuppliersBindingSource.MoveFirst()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.VendorsBindingSource.MoveNext()
-
+        Me.SuppliersBindingSource.MoveNext()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.VendorsBindingSource.MovePrevious()
+        Me.SuppliersBindingSource.MovePrevious()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Me.VendorsBindingSource.MoveLast()
+        Me.SuppliersBindingSource.MoveLast()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Me.VendorsBindingSource.AddNew()
+        Me.SuppliersBindingSource.AddNew()
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         Me.Validate()
-        Me.VendorsBindingSource.EndEdit()
+        Me.SuppliersBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.PetshopdbDataSet)
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        Me.VendorsBindingSource.RemoveCurrent()
+        Me.SuppliersBindingSource.RemoveCurrent()
     End Sub
 End Class

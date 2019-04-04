@@ -67,7 +67,6 @@ Partial Class vendors
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
         V_idLabel = New System.Windows.Forms.Label()
         C_idLabel = New System.Windows.Forms.Label()
         V_first_nameLabel = New System.Windows.Forms.Label()
@@ -395,7 +394,7 @@ Partial Class vendors
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(117, 35)
         Me.Button5.TabIndex = 23
-        Me.Button5.Text = "Add Customer"
+        Me.Button5.Text = "Add Vendor"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Button4
@@ -434,21 +433,11 @@ Partial Class vendors
         Me.Button1.Text = "Next"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button8
-        '
-        Me.Button8.Location = New System.Drawing.Point(381, 12)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 23)
-        Me.Button8.TabIndex = 26
-        Me.Button8.Text = "First"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
         'vendors
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(637, 449)
-        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
@@ -519,5 +508,4 @@ Partial Class vendors
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button8 As System.Windows.Forms.Button
 End Class
