@@ -9,3 +9,6 @@ C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\Window
 C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.exe
 C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.xml
 C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.pdb
+C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.items.resources
+C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.vendors.resources
+C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.Main.resources

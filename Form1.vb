@@ -45,4 +45,9 @@
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Me.CustomersBindingSource.RemoveCurrent()
     End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        items.Show()
+
+    End Sub
 End Class

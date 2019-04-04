@@ -16,4 +16,9 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Me.VendorsBindingSource.MoveFirst()
     End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        items.Show()
+
+    End Sub
 End Class
