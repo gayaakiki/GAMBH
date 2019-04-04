@@ -89,13 +89,16 @@ Partial Class Form1
         '
         'CustomersDataGridView
         '
+        Me.CustomersDataGridView.AllowUserToAddRows = False
+        Me.CustomersDataGridView.AllowUserToDeleteRows = False
         Me.CustomersDataGridView.AllowUserToOrderColumns = True
         Me.CustomersDataGridView.AutoGenerateColumns = False
         Me.CustomersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.CustomersDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
         Me.CustomersDataGridView.DataSource = Me.CustomersBindingSource
-        Me.CustomersDataGridView.Location = New System.Drawing.Point(12, 147)
+        Me.CustomersDataGridView.Location = New System.Drawing.Point(20, 144)
         Me.CustomersDataGridView.Name = "CustomersDataGridView"
+        Me.CustomersDataGridView.ReadOnly = True
         Me.CustomersDataGridView.Size = New System.Drawing.Size(563, 177)
         Me.CustomersDataGridView.TabIndex = 1
         '
