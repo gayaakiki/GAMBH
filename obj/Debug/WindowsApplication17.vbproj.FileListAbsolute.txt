@@ -1,1 +1,11 @@
 c:\users\micho\documents\visual studio 2013\Projects\WindowsApplication17\WindowsApplication17\bin\Debug\WindowsApplication17.exe.config
+C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\bin\Debug\WindowsApplication17.exe
+C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\bin\Debug\WindowsApplication17.pdb
+C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\bin\Debug\WindowsApplication17.xml
+C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.Form1.resources
+C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.Form2.resources
+C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.Resources.resources
+C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.vbproj.GenerateResource.Cache
+C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.exe
+C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.xml
+C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.pdb

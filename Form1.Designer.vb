@@ -24,22 +24,27 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim C_idLabel As System.Windows.Forms.Label
+        Dim C_first_nameLabel As System.Windows.Forms.Label
+        Dim C_last_nameLabel As System.Windows.Forms.Label
+        Dim C_addressLabel As System.Windows.Forms.Label
+        Dim C_dobLabel As System.Windows.Forms.Label
         Me.PetshopdbDataSet = New WindowsApplication17.petshopdbDataSet()
         Me.CustomersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.CustomersTableAdapter = New WindowsApplication17.petshopdbDataSetTableAdapters.CustomersTableAdapter()
         Me.TableAdapterManager = New WindowsApplication17.petshopdbDataSetTableAdapters.TableAdapterManager()
         Me.CustomersBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.CustomersBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.CustomersDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -47,6 +52,17 @@ Partial Class Form1
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.C_idTextBox = New System.Windows.Forms.TextBox()
+        Me.C_first_nameTextBox = New System.Windows.Forms.TextBox()
+        Me.C_last_nameTextBox = New System.Windows.Forms.TextBox()
+        Me.C_addressTextBox = New System.Windows.Forms.TextBox()
+        Me.C_dobDateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.Button1 = New System.Windows.Forms.Button()
+        C_idLabel = New System.Windows.Forms.Label()
+        C_first_nameLabel = New System.Windows.Forms.Label()
+        C_last_nameLabel = New System.Windows.Forms.Label()
+        C_addressLabel = New System.Windows.Forms.Label()
+        C_dobLabel = New System.Windows.Forms.Label()
         CType(Me.PetshopdbDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CustomersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CustomersBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -95,9 +111,34 @@ Partial Class Form1
         Me.CustomersBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.CustomersBindingNavigator.Name = "CustomersBindingNavigator"
         Me.CustomersBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.CustomersBindingNavigator.Size = New System.Drawing.Size(587, 25)
+        Me.CustomersBindingNavigator.Size = New System.Drawing.Size(595, 25)
         Me.CustomersBindingNavigator.TabIndex = 0
         Me.CustomersBindingNavigator.Text = "BindingNavigator1"
+        '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
+        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'BindingNavigatorMoveFirstItem
         '
@@ -131,17 +172,10 @@ Partial Class Form1
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
         '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 15)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
-        '
         'BindingNavigatorSeparator1
         '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 6)
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -149,7 +183,7 @@ Partial Class Form1
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorMoveNextItem.Text = "Move next"
         '
         'BindingNavigatorMoveLastItem
@@ -158,49 +192,32 @@ Partial Class Form1
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorMoveLastItem.Text = "Move last"
         '
         'BindingNavigatorSeparator2
         '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 6)
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Add new"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 20)
-        Me.BindingNavigatorDeleteItem.Text = "Delete"
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
         '
         'CustomersBindingNavigatorSaveItem
         '
         Me.CustomersBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.CustomersBindingNavigatorSaveItem.Image = CType(resources.GetObject("CustomersBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.CustomersBindingNavigatorSaveItem.Name = "CustomersBindingNavigatorSaveItem"
-        Me.CustomersBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
+        Me.CustomersBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
         Me.CustomersBindingNavigatorSaveItem.Text = "Save Data"
         '
         'CustomersDataGridView
         '
+        Me.CustomersDataGridView.AllowUserToOrderColumns = True
         Me.CustomersDataGridView.AutoGenerateColumns = False
         Me.CustomersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.CustomersDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5})
         Me.CustomersDataGridView.DataSource = Me.CustomersBindingSource
-        Me.CustomersDataGridView.Location = New System.Drawing.Point(0, 28)
+        Me.CustomersDataGridView.Location = New System.Drawing.Point(12, 174)
         Me.CustomersDataGridView.Name = "CustomersDataGridView"
-        Me.CustomersDataGridView.Size = New System.Drawing.Size(544, 170)
+        Me.CustomersDataGridView.Size = New System.Drawing.Size(563, 177)
         Me.CustomersDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -233,15 +250,120 @@ Partial Class Form1
         Me.DataGridViewTextBoxColumn5.HeaderText = "c_dob"
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         '
+        'C_idLabel
+        '
+        C_idLabel.AutoSize = True
+        C_idLabel.Location = New System.Drawing.Point(15, 45)
+        C_idLabel.Name = "C_idLabel"
+        C_idLabel.Size = New System.Drawing.Size(27, 13)
+        C_idLabel.TabIndex = 2
+        C_idLabel.Text = "c id:"
+        '
+        'C_idTextBox
+        '
+        Me.C_idTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomersBindingSource, "c_id", True))
+        Me.C_idTextBox.Location = New System.Drawing.Point(85, 42)
+        Me.C_idTextBox.Name = "C_idTextBox"
+        Me.C_idTextBox.Size = New System.Drawing.Size(200, 20)
+        Me.C_idTextBox.TabIndex = 3
+        '
+        'C_first_nameLabel
+        '
+        C_first_nameLabel.AutoSize = True
+        C_first_nameLabel.Location = New System.Drawing.Point(15, 71)
+        C_first_nameLabel.Name = "C_first_nameLabel"
+        C_first_nameLabel.Size = New System.Drawing.Size(64, 13)
+        C_first_nameLabel.TabIndex = 4
+        C_first_nameLabel.Text = "c first name:"
+        '
+        'C_first_nameTextBox
+        '
+        Me.C_first_nameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomersBindingSource, "c_first_name", True))
+        Me.C_first_nameTextBox.Location = New System.Drawing.Point(85, 68)
+        Me.C_first_nameTextBox.Name = "C_first_nameTextBox"
+        Me.C_first_nameTextBox.Size = New System.Drawing.Size(200, 20)
+        Me.C_first_nameTextBox.TabIndex = 5
+        '
+        'C_last_nameLabel
+        '
+        C_last_nameLabel.AutoSize = True
+        C_last_nameLabel.Location = New System.Drawing.Point(15, 97)
+        C_last_nameLabel.Name = "C_last_nameLabel"
+        C_last_nameLabel.Size = New System.Drawing.Size(64, 13)
+        C_last_nameLabel.TabIndex = 6
+        C_last_nameLabel.Text = "c last name:"
+        '
+        'C_last_nameTextBox
+        '
+        Me.C_last_nameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomersBindingSource, "c_last_name", True))
+        Me.C_last_nameTextBox.Location = New System.Drawing.Point(85, 94)
+        Me.C_last_nameTextBox.Name = "C_last_nameTextBox"
+        Me.C_last_nameTextBox.Size = New System.Drawing.Size(200, 20)
+        Me.C_last_nameTextBox.TabIndex = 7
+        '
+        'C_addressLabel
+        '
+        C_addressLabel.AutoSize = True
+        C_addressLabel.Location = New System.Drawing.Point(15, 123)
+        C_addressLabel.Name = "C_addressLabel"
+        C_addressLabel.Size = New System.Drawing.Size(56, 13)
+        C_addressLabel.TabIndex = 8
+        C_addressLabel.Text = "c address:"
+        '
+        'C_addressTextBox
+        '
+        Me.C_addressTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CustomersBindingSource, "c_address", True))
+        Me.C_addressTextBox.Location = New System.Drawing.Point(85, 120)
+        Me.C_addressTextBox.Name = "C_addressTextBox"
+        Me.C_addressTextBox.Size = New System.Drawing.Size(200, 20)
+        Me.C_addressTextBox.TabIndex = 9
+        '
+        'C_dobLabel
+        '
+        C_dobLabel.AutoSize = True
+        C_dobLabel.Location = New System.Drawing.Point(15, 150)
+        C_dobLabel.Name = "C_dobLabel"
+        C_dobLabel.Size = New System.Drawing.Size(37, 13)
+        C_dobLabel.TabIndex = 10
+        C_dobLabel.Text = "c dob:"
+        '
+        'C_dobDateTimePicker
+        '
+        Me.C_dobDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.CustomersBindingSource, "c_dob", True))
+        Me.C_dobDateTimePicker.Location = New System.Drawing.Point(85, 146)
+        Me.C_dobDateTimePicker.Name = "C_dobDateTimePicker"
+        Me.C_dobDateTimePicker.Size = New System.Drawing.Size(200, 20)
+        Me.C_dobDateTimePicker.TabIndex = 11
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(324, 42)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 12
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(587, 299)
+        Me.ClientSize = New System.Drawing.Size(595, 371)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(C_idLabel)
+        Me.Controls.Add(Me.C_idTextBox)
+        Me.Controls.Add(C_first_nameLabel)
+        Me.Controls.Add(Me.C_first_nameTextBox)
+        Me.Controls.Add(C_last_nameLabel)
+        Me.Controls.Add(Me.C_last_nameTextBox)
+        Me.Controls.Add(C_addressLabel)
+        Me.Controls.Add(Me.C_addressTextBox)
+        Me.Controls.Add(C_dobLabel)
+        Me.Controls.Add(Me.C_dobDateTimePicker)
         Me.Controls.Add(Me.CustomersDataGridView)
         Me.Controls.Add(Me.CustomersBindingNavigator)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "PET SHOP"
         CType(Me.PetshopdbDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CustomersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CustomersBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
@@ -275,5 +397,11 @@ Partial Class Form1
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents C_idTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents C_first_nameTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents C_last_nameTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents C_addressTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents C_dobDateTimePicker As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class
