@@ -17,4 +17,8 @@
         Me.Close()
 
     End Sub
+
+    Private Sub ItemsComboBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ItemsComboBox.SelectedIndexChanged
+
+    End Sub
 End Class

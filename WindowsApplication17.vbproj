@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="category.Designer.vb">
+      <DependentUpon>category.vb</DependentUpon>
+    </Compile>
+    <Compile Include="category.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>petshopdbDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="servicedetails.Designer.vb">
+      <DependentUpon>servicedetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="servicedetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="suppliers.Designer.vb">
       <DependentUpon>suppliers.vb</DependentUpon>
     </Compile>
@@ -129,6 +141,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="category.resx">
+      <DependentUpon>category.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="order.resx">
       <DependentUpon>order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servicedetails.resx">
+      <DependentUpon>servicedetails.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="suppliers.resx">
       <DependentUpon>suppliers.vb</DependentUpon>

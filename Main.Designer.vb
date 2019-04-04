@@ -27,6 +27,8 @@ Partial Class Main
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -74,11 +76,31 @@ Partial Class Main
         Me.Button5.Text = "Suppliers"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(314, 123)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(124, 64)
+        Me.Button6.TabIndex = 5
+        Me.Button6.Text = "Category"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(12, 228)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(124, 64)
+        Me.Button7.TabIndex = 6
+        Me.Button7.Text = "Service Details"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(452, 199)
+        Me.ClientSize = New System.Drawing.Size(452, 295)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -96,4 +118,6 @@ Partial Class Main
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents Button7 As System.Windows.Forms.Button
 End Class

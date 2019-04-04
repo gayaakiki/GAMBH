@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class category
+Partial Class servicedetails
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,16 +23,14 @@ Partial Class category
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(category))
-        Dim Cat_idLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(servicedetails))
         Dim Sd_idLabel As System.Windows.Forms.Label
-        Dim I_idLabel As System.Windows.Forms.Label
-        Dim Cat_nameLabel As System.Windows.Forms.Label
+        Dim Sd_descreptionLabel As System.Windows.Forms.Label
         Me.PetshopdbDataSet = New WindowsApplication17.petshopdbDataSet()
-        Me.CategoryBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.CategoryTableAdapter = New WindowsApplication17.petshopdbDataSetTableAdapters.CategoryTableAdapter()
+        Me.ServiceDetailsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ServiceDetailsTableAdapter = New WindowsApplication17.petshopdbDataSetTableAdapters.ServiceDetailsTableAdapter()
         Me.TableAdapterManager = New WindowsApplication17.petshopdbDataSetTableAdapters.TableAdapterManager()
-        Me.CategoryBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.ServiceDetailsBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
@@ -44,21 +42,19 @@ Partial Class category
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-        Me.CategoryBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
-        Me.CategoryComboBox = New System.Windows.Forms.ComboBox()
-        Me.Cat_idTextBox = New System.Windows.Forms.TextBox()
+        Me.ServiceDetailsBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.Sd_idTextBox = New System.Windows.Forms.TextBox()
-        Me.I_idTextBox = New System.Windows.Forms.TextBox()
-        Me.Cat_nameTextBox = New System.Windows.Forms.TextBox()
+        Me.Sd_descreptionTextBox = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Cat_idLabel = New System.Windows.Forms.Label()
+        Me.ServiceDetailsBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ServiceDetailsComboBox = New System.Windows.Forms.ComboBox()
         Sd_idLabel = New System.Windows.Forms.Label()
-        I_idLabel = New System.Windows.Forms.Label()
-        Cat_nameLabel = New System.Windows.Forms.Label()
+        Sd_descreptionLabel = New System.Windows.Forms.Label()
         CType(Me.PetshopdbDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CategoryBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CategoryBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.CategoryBindingNavigator.SuspendLayout()
+        CType(Me.ServiceDetailsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ServiceDetailsBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ServiceDetailsBindingNavigator.SuspendLayout()
+        CType(Me.ServiceDetailsBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PetshopdbDataSet
@@ -66,45 +62,45 @@ Partial Class category
         Me.PetshopdbDataSet.DataSetName = "petshopdbDataSet"
         Me.PetshopdbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'CategoryBindingSource
+        'ServiceDetailsBindingSource
         '
-        Me.CategoryBindingSource.DataMember = "Category"
-        Me.CategoryBindingSource.DataSource = Me.PetshopdbDataSet
+        Me.ServiceDetailsBindingSource.DataMember = "ServiceDetails"
+        Me.ServiceDetailsBindingSource.DataSource = Me.PetshopdbDataSet
         '
-        'CategoryTableAdapter
+        'ServiceDetailsTableAdapter
         '
-        Me.CategoryTableAdapter.ClearBeforeFill = True
+        Me.ServiceDetailsTableAdapter.ClearBeforeFill = True
         '
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.CategoryTableAdapter = Me.CategoryTableAdapter
+        Me.TableAdapterManager.CategoryTableAdapter = Nothing
         Me.TableAdapterManager.CustomersTableAdapter = Nothing
         Me.TableAdapterManager.ItemsTableAdapter = Nothing
         Me.TableAdapterManager.Order1TableAdapter = Nothing
         Me.TableAdapterManager.PaymentTableAdapter = Nothing
-        Me.TableAdapterManager.ServiceDetailsTableAdapter = Nothing
+        Me.TableAdapterManager.ServiceDetailsTableAdapter = Me.ServiceDetailsTableAdapter
         Me.TableAdapterManager.suppliersTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = WindowsApplication17.petshopdbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.VendorsTableAdapter = Nothing
         '
-        'CategoryBindingNavigator
+        'ServiceDetailsBindingNavigator
         '
-        Me.CategoryBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.CategoryBindingNavigator.BindingSource = Me.CategoryBindingSource
-        Me.CategoryBindingNavigator.CountItem = Me.BindingNavigatorCountItem
-        Me.CategoryBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
-        Me.CategoryBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.CategoryBindingNavigatorSaveItem})
-        Me.CategoryBindingNavigator.Location = New System.Drawing.Point(0, 0)
-        Me.CategoryBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
-        Me.CategoryBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
-        Me.CategoryBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
-        Me.CategoryBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
-        Me.CategoryBindingNavigator.Name = "CategoryBindingNavigator"
-        Me.CategoryBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.CategoryBindingNavigator.Size = New System.Drawing.Size(724, 25)
-        Me.CategoryBindingNavigator.TabIndex = 0
-        Me.CategoryBindingNavigator.Text = "BindingNavigator1"
+        Me.ServiceDetailsBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
+        Me.ServiceDetailsBindingNavigator.BindingSource = Me.ServiceDetailsBindingSource
+        Me.ServiceDetailsBindingNavigator.CountItem = Me.BindingNavigatorCountItem
+        Me.ServiceDetailsBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
+        Me.ServiceDetailsBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.ServiceDetailsBindingNavigatorSaveItem})
+        Me.ServiceDetailsBindingNavigator.Location = New System.Drawing.Point(0, 0)
+        Me.ServiceDetailsBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
+        Me.ServiceDetailsBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
+        Me.ServiceDetailsBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
+        Me.ServiceDetailsBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
+        Me.ServiceDetailsBindingNavigator.Name = "ServiceDetailsBindingNavigator"
+        Me.ServiceDetailsBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
+        Me.ServiceDetailsBindingNavigator.Size = New System.Drawing.Size(402, 25)
+        Me.ServiceDetailsBindingNavigator.TabIndex = 0
+        Me.ServiceDetailsBindingNavigator.Text = "BindingNavigator1"
         '
         'BindingNavigatorMoveFirstItem
         '
@@ -191,134 +187,102 @@ Partial Class category
         Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 20)
         Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
-        'CategoryBindingNavigatorSaveItem
+        'ServiceDetailsBindingNavigatorSaveItem
         '
-        Me.CategoryBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.CategoryBindingNavigatorSaveItem.Image = CType(resources.GetObject("CategoryBindingNavigatorSaveItem.Image"), System.Drawing.Image)
-        Me.CategoryBindingNavigatorSaveItem.Name = "CategoryBindingNavigatorSaveItem"
-        Me.CategoryBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
-        Me.CategoryBindingNavigatorSaveItem.Text = "Save Data"
-        '
-        'CategoryComboBox
-        '
-        Me.CategoryComboBox.DataSource = Me.CategoryBindingSource
-        Me.CategoryComboBox.DisplayMember = "sd_id"
-        Me.CategoryComboBox.FormattingEnabled = True
-        Me.CategoryComboBox.Location = New System.Drawing.Point(57, 28)
-        Me.CategoryComboBox.Name = "CategoryComboBox"
-        Me.CategoryComboBox.Size = New System.Drawing.Size(300, 21)
-        Me.CategoryComboBox.TabIndex = 1
-        Me.CategoryComboBox.ValueMember = "cat_id"
-        '
-        'Cat_idLabel
-        '
-        Cat_idLabel.AutoSize = True
-        Cat_idLabel.Location = New System.Drawing.Point(68, 93)
-        Cat_idLabel.Name = "Cat_idLabel"
-        Cat_idLabel.Size = New System.Drawing.Size(36, 13)
-        Cat_idLabel.TabIndex = 2
-        Cat_idLabel.Text = "cat id:"
-        '
-        'Cat_idTextBox
-        '
-        Me.Cat_idTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CategoryBindingSource, "cat_id", True))
-        Me.Cat_idTextBox.Location = New System.Drawing.Point(128, 90)
-        Me.Cat_idTextBox.Name = "Cat_idTextBox"
-        Me.Cat_idTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.Cat_idTextBox.TabIndex = 3
+        Me.ServiceDetailsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ServiceDetailsBindingNavigatorSaveItem.Image = CType(resources.GetObject("ServiceDetailsBindingNavigatorSaveItem.Image"), System.Drawing.Image)
+        Me.ServiceDetailsBindingNavigatorSaveItem.Name = "ServiceDetailsBindingNavigatorSaveItem"
+        Me.ServiceDetailsBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
+        Me.ServiceDetailsBindingNavigatorSaveItem.Text = "Save Data"
         '
         'Sd_idLabel
         '
         Sd_idLabel.AutoSize = True
-        Sd_idLabel.Location = New System.Drawing.Point(68, 119)
+        Sd_idLabel.Location = New System.Drawing.Point(42, 89)
         Sd_idLabel.Name = "Sd_idLabel"
         Sd_idLabel.Size = New System.Drawing.Size(32, 13)
-        Sd_idLabel.TabIndex = 4
+        Sd_idLabel.TabIndex = 1
         Sd_idLabel.Text = "sd id:"
         '
         'Sd_idTextBox
         '
-        Me.Sd_idTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CategoryBindingSource, "sd_id", True))
-        Me.Sd_idTextBox.Location = New System.Drawing.Point(128, 116)
+        Me.Sd_idTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ServiceDetailsBindingSource, "sd_id", True))
+        Me.Sd_idTextBox.Location = New System.Drawing.Point(129, 82)
         Me.Sd_idTextBox.Name = "Sd_idTextBox"
         Me.Sd_idTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.Sd_idTextBox.TabIndex = 5
+        Me.Sd_idTextBox.TabIndex = 2
         '
-        'I_idLabel
+        'Sd_descreptionLabel
         '
-        I_idLabel.AutoSize = True
-        I_idLabel.Location = New System.Drawing.Point(68, 145)
-        I_idLabel.Name = "I_idLabel"
-        I_idLabel.Size = New System.Drawing.Size(23, 13)
-        I_idLabel.TabIndex = 6
-        I_idLabel.Text = "i id:"
+        Sd_descreptionLabel.AutoSize = True
+        Sd_descreptionLabel.Location = New System.Drawing.Point(28, 126)
+        Sd_descreptionLabel.Name = "Sd_descreptionLabel"
+        Sd_descreptionLabel.Size = New System.Drawing.Size(79, 13)
+        Sd_descreptionLabel.TabIndex = 3
+        Sd_descreptionLabel.Text = "sd descreption:"
         '
-        'I_idTextBox
+        'Sd_descreptionTextBox
         '
-        Me.I_idTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CategoryBindingSource, "i_id", True))
-        Me.I_idTextBox.Location = New System.Drawing.Point(128, 142)
-        Me.I_idTextBox.Name = "I_idTextBox"
-        Me.I_idTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.I_idTextBox.TabIndex = 7
-        '
-        'Cat_nameLabel
-        '
-        Cat_nameLabel.AutoSize = True
-        Cat_nameLabel.Location = New System.Drawing.Point(68, 171)
-        Cat_nameLabel.Name = "Cat_nameLabel"
-        Cat_nameLabel.Size = New System.Drawing.Size(54, 13)
-        Cat_nameLabel.TabIndex = 8
-        Cat_nameLabel.Text = "cat name:"
-        '
-        'Cat_nameTextBox
-        '
-        Me.Cat_nameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CategoryBindingSource, "cat_name", True))
-        Me.Cat_nameTextBox.Location = New System.Drawing.Point(128, 168)
-        Me.Cat_nameTextBox.Name = "Cat_nameTextBox"
-        Me.Cat_nameTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.Cat_nameTextBox.TabIndex = 9
+        Me.Sd_descreptionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ServiceDetailsBindingSource, "sd_descreption", True))
+        Me.Sd_descreptionTextBox.Location = New System.Drawing.Point(129, 123)
+        Me.Sd_descreptionTextBox.Name = "Sd_descreptionTextBox"
+        Me.Sd_descreptionTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Sd_descreptionTextBox.TabIndex = 4
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(128, 258)
+        Me.Button1.Location = New System.Drawing.Point(143, 199)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "Close"
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "Submit"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'category
+        'ServiceDetailsBindingSource1
+        '
+        Me.ServiceDetailsBindingSource1.DataMember = "ServiceDetails"
+        Me.ServiceDetailsBindingSource1.DataSource = Me.PetshopdbDataSet
+        '
+        'ServiceDetailsComboBox
+        '
+        Me.ServiceDetailsComboBox.DataSource = Me.ServiceDetailsBindingSource1
+        Me.ServiceDetailsComboBox.DisplayMember = "sd_descreption"
+        Me.ServiceDetailsComboBox.FormattingEnabled = True
+        Me.ServiceDetailsComboBox.Location = New System.Drawing.Point(45, 28)
+        Me.ServiceDetailsComboBox.Name = "ServiceDetailsComboBox"
+        Me.ServiceDetailsComboBox.Size = New System.Drawing.Size(300, 21)
+        Me.ServiceDetailsComboBox.TabIndex = 6
+        Me.ServiceDetailsComboBox.ValueMember = "sd_id"
+        '
+        'servicedetails
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(724, 340)
+        Me.ClientSize = New System.Drawing.Size(402, 261)
+        Me.Controls.Add(Me.ServiceDetailsComboBox)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Cat_idLabel)
-        Me.Controls.Add(Me.Cat_idTextBox)
         Me.Controls.Add(Sd_idLabel)
         Me.Controls.Add(Me.Sd_idTextBox)
-        Me.Controls.Add(I_idLabel)
-        Me.Controls.Add(Me.I_idTextBox)
-        Me.Controls.Add(Cat_nameLabel)
-        Me.Controls.Add(Me.Cat_nameTextBox)
-        Me.Controls.Add(Me.CategoryComboBox)
-        Me.Controls.Add(Me.CategoryBindingNavigator)
-        Me.Name = "category"
-        Me.Text = "category"
+        Me.Controls.Add(Sd_descreptionLabel)
+        Me.Controls.Add(Me.Sd_descreptionTextBox)
+        Me.Controls.Add(Me.ServiceDetailsBindingNavigator)
+        Me.Name = "servicedetails"
+        Me.Text = "servicedetails"
         CType(Me.PetshopdbDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CategoryBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CategoryBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.CategoryBindingNavigator.ResumeLayout(False)
-        Me.CategoryBindingNavigator.PerformLayout()
+        CType(Me.ServiceDetailsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ServiceDetailsBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ServiceDetailsBindingNavigator.ResumeLayout(False)
+        Me.ServiceDetailsBindingNavigator.PerformLayout()
+        CType(Me.ServiceDetailsBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents PetshopdbDataSet As WindowsApplication17.petshopdbDataSet
-    Friend WithEvents CategoryBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents CategoryTableAdapter As WindowsApplication17.petshopdbDataSetTableAdapters.CategoryTableAdapter
+    Friend WithEvents ServiceDetailsBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents ServiceDetailsTableAdapter As WindowsApplication17.petshopdbDataSetTableAdapters.ServiceDetailsTableAdapter
     Friend WithEvents TableAdapterManager As WindowsApplication17.petshopdbDataSetTableAdapters.TableAdapterManager
-    Friend WithEvents CategoryBindingNavigator As System.Windows.Forms.BindingNavigator
+    Friend WithEvents ServiceDetailsBindingNavigator As System.Windows.Forms.BindingNavigator
     Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
     Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
@@ -330,11 +294,10 @@ Partial Class category
     Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents CategoryBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents CategoryComboBox As System.Windows.Forms.ComboBox
-    Friend WithEvents Cat_idTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents ServiceDetailsBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents Sd_idTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents I_idTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Cat_nameTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Sd_descreptionTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents ServiceDetailsBindingSource1 As System.Windows.Forms.BindingSource
+    Friend WithEvents ServiceDetailsComboBox As System.Windows.Forms.ComboBox
 End Class

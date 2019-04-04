@@ -13,3 +13,5 @@ C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\Window
 C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.Main.resources
 C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.order.resources
 C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.suppliers.resources
+C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.category.resources
+C:\Users\Micho\Documents\Visual Studio 2013\Projects\WindowsApplication17\WindowsApplication17\obj\Debug\WindowsApplication17.servicedetails.resources
